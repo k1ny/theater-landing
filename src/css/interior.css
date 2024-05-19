@@ -1,0 +1,10 @@
+@import "fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .stats {
+        @apply w-fit font-bergamasco text-[90px] backdrop-blur-[10px] bg-white leading-none py-3 px-8  bg-opacity-25 rounded-[34px] border-[2px] border-[#FFFFFF] text-center;
+    }
+}

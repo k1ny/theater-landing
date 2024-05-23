@@ -53,7 +53,7 @@
                     </div>
 
                     <div
-                        class="buttons flex gap-20 font-philosopher text-2xl text-white"
+                        class="buttons flex gap-20 font-philosopher text-2xl text-white fixed top-12 z-50"
                     >
                         <a
                             href="/index.html"
@@ -142,31 +142,30 @@
             <div
                 class="max-w-[1280px] mx-auto flex justify-center gap-[38px] text-white mt-[158px] pb-[170px]"
             >
-                <div class="flex flex-col gap-[18px]">
-                    <span class="stats">2000</span>
+                <div class="flex flex-col gap-[18px] w-[325px]">
+                    <span class="stats counter" data-target="2000">2000</span>
                     <span class="font-philosopher text-[28px] text-center"
                         >Мест в зрительном зале</span
                     >
                 </div>
 
-                <div class="flex flex-col gap-[18px]">
-                    <span class="stats">6</span>
+                <div class="flex flex-col gap-[18px] w-[150px]">
+                    <span class="stats counter" data-target="6">6</span>
                     <span class="font-philosopher text-[28px] text-center"
                         >Сцен</span
                     >
                 </div>
 
-                <div class="flex flex-col gap-[18px]">
-                    <span class="stats">6</span>
-                    <span
-                        class="font-philosopher text-[28px] w-[150px] text-center"
+                <div class="flex flex-col gap-[18px] w-[150px]">
+                    <span class="stats counter" data-target="6">6</span>
+                    <span class="font-philosopher text-[28px] text-center"
                         >Репетицион-ных залов</span
                     >
                 </div>
 
-                <div class="flex flex-col gap-[18px]">
-                    <span class="stats">300</span>
-                    <span class="font-philosopher text-[28px] w-[260px]"
+                <div class="flex flex-col gap-[18px] w-[260px]">
+                    <span class="stats counter" data-target="300">300</span>
+                    <span class="font-philosopher text-[28px]"
                         >Мест в репетиционном зале</span
                     >
                 </div>
@@ -328,5 +327,6 @@
         </section>
 
         <footer class="bg-[#342A26] h-[60px]"></footer>
+        <script src="/src/js/counter.js" type="module"></script>
     </body>
 </html>

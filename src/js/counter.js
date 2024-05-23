@@ -1,13 +1,13 @@
-const counters = document.querySelectorAll('.counter');
+const counters = document.querySelectorAll(".counter");
 
 const options = {
   root: null,
-  rootMargin: '0px',
-  threshold: 0.1
+  rootMargin: "0px",
+  threshold: 0.1,
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const counter = entry.target;
       animateCount(counter);
@@ -16,13 +16,13 @@ const observer = new IntersectionObserver((entries, observer) => {
   });
 }, options);
 
-counters.forEach(counter => {
+counters.forEach((counter) => {
   observer.observe(counter);
 });
 
 function animateCount(element) {
-  const target = +element.getAttribute('data-target');
-  const duration = target * (200 / Math.sqrt(target));
+  const target = +element.getAttribute("data-target");
+  const duration = target * (100 / Math.sqrt(target));
   const startTime = performance.now();
 
   function updateCount(currentTime) {
